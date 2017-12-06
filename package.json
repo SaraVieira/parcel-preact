@@ -1,0 +1,40 @@
+{
+    "name": "parcel-preact",
+    "version": "1.0.0",
+    "description": "Minimal Parcel Preact Test",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "dev": "parcel watch index.html",
+        "lint": "eslint . --cache --fix",
+        "build": "parcel build index.js",
+        "pretest": "npm run lint",
+        "format": "prettier --write '**/*.{js,css,md}'",
+        "posttest": "npm run format"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SaraVieira/parcel-preact.git"
+    },
+    "author": "Sara Vieira",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SaraVieira/parcel-preact/issues"
+    },
+    "homepage": "https://github.com/SaraVieira/parcel-preact#readme",
+    "dependencies": {
+        "preact": "^8.2.6",
+        "preact-compat": "^3.17.0",
+        "styled-components": "^2.2.4"
+    },
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.12.1",
+        "eslint-config-flying-rocket": "^1.1.1",
+        "module-alias": "^2.0.3",
+        "parcel-bundler": "^1.0.2",
+        "prettier": "^1.9.1"
+    }
+}
